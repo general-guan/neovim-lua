@@ -36,11 +36,26 @@ end
 packer.startup(
     {
         function(use)
-
+            -- Packer 可以升级自己
             use("wbthomason/packer.nvim")
+            -------------------------- plugins -------------------------------------------
+            -- nvim-tree
+            use({
+                "kyazdani42/nvim-tree.lua",
+                requires = "kyazdani42/nvim-web-devicons",
+            })
             use("navarasu/onedark.nvim")
             use("glepnir/dashboard-nvim")
             
+            -- telescope
+            use({
+                "nvim-telescope/telescope.nvim",
+                requires = { "nvim-lua/plenary.nvim" },
+            })
+             -- telescope extensions
+            use("LinArcX/telescope-env.nvim")
+            use("nvim-telescope/telescope-ui-select.nvim")
+
 
 
 

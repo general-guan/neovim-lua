@@ -9,6 +9,8 @@ require("colorscheme")
 -- 自动命令
 require("autocmds")
 -- 插件
+require("plugin-config.nvim-tree")
+require("plugin-config/telescope")
 require("plugin-config/dashboard")
 
 
