@@ -14,13 +14,16 @@ local opt = {
 -- 本地变量
 local map = vim.api.nvim_set_keymap
 
+map("n", "<leader>w", ":w<CR>", opt)
+map("n", "<leader>q", ":q!<CR>", opt)
+
 -- 插件快捷键
 local pluginKeys = {}
 
 -- nvim-tree
 -- map("n", "<F3>", ":NvimTreeToggle<CR>", opt)
-map("n", "<F3>", ":NvimTreeFocus<CR>", opt)
-map("n", "<A-F3>", ":NvimTreeToggle<CR>", opt)
+map("n", "<A-F3>", ":NvimTreeFocus<CR>", opt)
+map("n", "<F3>", ":NvimTreeToggle<CR>", opt)
 pluginKeys.nvimTreeList = {
   -- 打开文件或文件夹
   { key = "o", action = "edit" },

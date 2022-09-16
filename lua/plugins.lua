@@ -44,9 +44,17 @@ packer.startup(
                 "kyazdani42/nvim-tree.lua",
                 requires = "kyazdani42/nvim-web-devicons",
             })
-            use("navarasu/onedark.nvim")
-            use("glepnir/dashboard-nvim")
-            
+            -- bufferline
+            use({
+                "akinsho/bufferline.nvim",
+                requires = { "kyazdani42/nvim-web-devicons" },
+            })
+            -- lualine
+            use({
+                "nvim-lualine/lualine.nvim",
+                requires = { "kyazdani42/nvim-web-devicons" },
+            })
+            use("arkav/lualine-lsp-progress")
             -- telescope
             use({
                 "nvim-telescope/telescope.nvim",
@@ -55,6 +63,25 @@ packer.startup(
              -- telescope extensions
             use("LinArcX/telescope-env.nvim")
             use("nvim-telescope/telescope-ui-select.nvim")
+            -- dashboard-nvim
+            use("glepnir/dashboard-nvim")
+            -- project
+            use("ahmedkhalf/project.nvim")
+            -- treesitter
+            use({
+                "nvim-treesitter/nvim-treesitter",
+                run = ":TSUpdate",
+            })
+
+
+
+
+
+            --------------------- colorschemes --------------------
+            use("navarasu/onedark.nvim")
+            -- 补全引擎
+            use("hrsh7th/nvim-cmp")
+            
 
 
 
