@@ -78,6 +78,13 @@ packer.startup(
             use("navarasu/onedark.nvim")
             -- 补全引擎
             use("hrsh7th/nvim-cmp")
+
+
+            
+            --------------------- LSP --------------------
+            use({ "williamboman/mason.nvim" })
+            use({ "williamboman/mason-lspconfig.nvim" })
+            use({ "neovim/nvim-lspconfig" })
             
 
 
