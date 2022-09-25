@@ -76,8 +76,6 @@ packer.startup(
 
             --------------------- colorschemes --------------------
             use("navarasu/onedark.nvim")
-            -- 补全引擎
-            use("hrsh7th/nvim-cmp")
 
 
             
@@ -85,7 +83,20 @@ packer.startup(
             use({ "williamboman/mason.nvim" })
             use({ "williamboman/mason-lspconfig.nvim" })
             use({ "neovim/nvim-lspconfig" })
-            
+
+            -- 补全源
+            use("hrsh7th/nvim-cmp")
+            use("hrsh7th/cmp-nvim-lsp") -- { name = nvim_lsp }
+            use("hrsh7th/cmp-buffer") -- { name = 'buffer' },
+            use("hrsh7th/cmp-path") -- { name = 'path' }
+            use("hrsh7th/cmp-cmdline") -- { name = 'cmdline' }
+
+              -- vsnip
+            use("hrsh7th/vim-vsnip")
+            use("hrsh7th/cmp-vsnip")
+
+            -- UI 增强
+            use("onsails/lspkind-nvim")
 
 
 

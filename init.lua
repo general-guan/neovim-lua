@@ -18,6 +18,8 @@ require("plugin-config/project")
 require("plugin-config.indent-blankline")
 -- 内置LSP
 require("lsp.setup")
+require("lsp.cmp")
+require("lsp.ui")
 
 
 
