@@ -11,6 +11,7 @@ db.custom_footer = {
 }
 
 db.custom_center = {
+  
   {
     icon = "  ",
     desc = "Projects                            ",
@@ -30,6 +31,11 @@ db.custom_center = {
     icon = "  ",
     desc = "Edit Projects                       ",
     action = "edit ~/.local/share/nvim/project_nvim/project_history",
+  },
+  {
+    icon = "  ",
+    desc = "Install                             ",
+    action = "PackerInstall",
   },
   -- {
   --   icon = "  ",
