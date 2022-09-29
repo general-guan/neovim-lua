@@ -101,6 +101,9 @@ packer.startup(
             -- git
             use({ "lewis6991/gitsigns.nvim" })
 
+            -- 注释
+            use("numToStr/Comment.nvim")
+
 
 
 

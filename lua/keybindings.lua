@@ -56,5 +56,22 @@ pluginKeys.nvimTreeList = {
   { key = { "[" }, action = "dir_up" },
 }
 
+  -- 注释 comment
+  pluginKeys.comment = {
+    -- Normal 模式快捷键
+    toggler = {
+      line = "gcc", -- 行注释
+      block = "gbc", -- 块注释
+    },
+    -- Visual 模式
+    opleader = {
+      line = "gc",
+      bock = "gb",
+    },
+  }
+  -- ctrl + /
+  map("n", "<C-_>", "gcc", { noremap = false })
+  map("v", "<C-_>", "gcc", { noremap = false })
+
 return pluginKeys
   

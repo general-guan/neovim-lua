@@ -17,6 +17,7 @@ require("plugin-config/dashboard")
 require("plugin-config/project")
 require("plugin-config.indent-blankline")
 require("plugin-config.gitsigns")
+require("plugin-config.comment")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")
