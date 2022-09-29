@@ -98,6 +98,9 @@ packer.startup(
             -- UI 增强
             use("onsails/lspkind-nvim")
 
+            -- git
+            use({ "lewis6991/gitsigns.nvim" })
+
 
 
 
