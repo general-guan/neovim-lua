@@ -104,6 +104,9 @@ packer.startup(
             -- 注释
             use("numToStr/Comment.nvim")
 
+            -- 自动补全
+            use("windwp/nvim-autopairs")
+
 
 
 

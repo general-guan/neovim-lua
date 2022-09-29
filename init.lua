@@ -18,6 +18,7 @@ require("plugin-config/project")
 require("plugin-config.indent-blankline")
 require("plugin-config.gitsigns")
 require("plugin-config.comment")
+require("plugin-config.nvim-autopairs")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")
